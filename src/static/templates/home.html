@@ -72,11 +72,7 @@
                     <!-- /responsive nav button -->
                     
                     <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="{% url 'home' %}" >
-                            <img src="{% static 'images/logo.png' %}" alt="">
-                        </a>
-                    </div>
+
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
@@ -87,16 +83,8 @@
                                 <a href="{% url 'home' %}" >Home</a>
                             </li>
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'service' %}">Service</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="{% url 'Page_Not_Found' %}">404 Page</a></li>
-                                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li><a href="{% url 'career' %}">career</a></li>
+
                            <!-- blog created  <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
                                 <div class="dropdown-menu">
@@ -124,9 +112,10 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="block wow fadeInUp" data-wow-delay=".3s">
-                            
+
                             <!-- Slider -->
                             <section class="cd-intro">
+                                <img class="img-circle imgsus" alt="Akash Dwivedi" src="{% static 'images/dp.jpg'%}">
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
                                 <span>HI, MY NAME IS AKASH  & I AM A</span><br>
                                 <span class="cd-words-wrapper">
@@ -141,7 +130,7 @@
                                     With 10 years experience, I've occupied many roles including digital design director,<br> web designer and developer. This site showcases some of my work.
                                 </h2>-->
                                 <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -159,13 +148,10 @@
                                 <h2>
                                 ABOUT ME
                                 </h2>
-                                <p>
-                                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.
-                                </p>
-                            </div>
+                                <p>Hi, I am Akash Dwivedi, a pre final year undergrad student from India. I love to travel and meet new people. Currently, I am actively seeking a full-time software engineering role anywhere around the globe. Peer Group, Work Quality and Growth Opportunities are the most important things I am looking for in a job. To know more about m
+                                    e</p>
+
+                                                            </div>
                             
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -180,156 +166,6 @@
             ==================================================
             Portfolio Section Start
             ================================================== -->
-            <section id="works" class="works">
-                <div class="container">
-                    <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-1.jpg' %}" class="img-responsive" alt="this is a title" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-1.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Dew Drop
-                                </a>
-                                </h4>
-                                <p>
-                                    Redesigne UI Concept
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-2.jpg' %}" class="img-responsive" alt="this is a title" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-2.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Bottle Mockup
-                                </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit.
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-3.jpg' %}" class="img-responsive" alt="" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-3.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Table Design
-                                </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet.
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-4.jpg' %}" class="img-responsive" alt="" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-4.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Make Up elements
-                                </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor.
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-5.jpg' %}" class="img-responsive" alt="" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-5.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Shoping Bag Concept
-                                </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor.
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
-                                <div class="img-wrapper">
-                                    <img src="{% static 'images/portfolio/item-6.jpg' %}" class="img-responsive" alt="" >
-                                    <div class="overlay">
-                                        <div class="buttons">
-                                            <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-6.jpg' %}">Demo</a>
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                    Caramel Bottle
-                                </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor.
-                                </p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- #works -->
             <!--
             ==================================================
             Portfolio Section Start
@@ -337,93 +173,74 @@
             <section id="feature">
                 <div class="container">
                     <div class="section-heading">
-                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offer From Me</h1>
-                        <p class="wow fadeInDown" data-wow-delay=".5s">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,<br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
-                        </p>
-                    </div>
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s"></h1>
+                        </div>
                     <div class="row">
                         <div class="col-md-4 col-lg-4 col-xs-12">
                             <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-flask-outline"></i>
+                                       <a href="{% url 'about' %}"> <abbr title="Know Me" ><i class="ion-person"></i></abbr></a>
                                     </div>
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Media heading</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xs-12">
                             <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
+                                        <a href="http://www.github.com/trailblazerakash"> <abbr title="Work Sample" ><i class="ion-code"></i></abbr></a>
                                     </div>
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xs-12">
                             <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
                                 <div class="media-left">
                                     <div class="icon">
-                                        <i class="ion-ios-lightbulb-outline"></i>
+                                        <abbr title="Download Resume">    <i class="ion-android-attach"></i></abbr>
                                     </div>
                                 </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Well documented.</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
+
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-americanfootball-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Free updates</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-keypad-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Solid Support</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 col-xs-12">
-                            <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
-                                <div class="media-left">
-                                    <div class="icon">
-                                        <i class="ion-ios-barcode-outline"></i>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Simple Installation</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section> <!-- /#feature -->
+            <section id="works" class="works">
+                <div class="container">
+                    <div class="section-heading">
+                        <h1 class="title wow fadeInDown" data-wow-delay=".3s">At a Glance</h1>
+
+                    </div>
+                    <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <h2><font><font class=""></font>EDUCATION</font></h2>
+          <p >Undergraduate Student at Krishna Institute Of Engineering And Technology , Ghaziabad, India. 
+Major in Computer Science
+Batch of 2017</p>
+          <p><a class="btn btn-primary" href="{%url 'career' %}" role="button"><font><font>View details »</font></font></a></p>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <h2><font><font>FROM</font></font></h2>
+          <p><font><font>Born and brought up in Lucknow (the city of Nawabs), Uttar Pradesh, India. 
+Currently living in the city of Ghaziabad, Uttar Pradesh, India.</p>
+          <p><a class="btn btn-primary" href="{% url 'about' %}" role="button"><font><font>View details »</font></font></a></p>
+       </div>
+        <div class="col-xs-6 col-md-4">
+          <h2><font><font>Projects</font></font></h2>
+          <p>Worked on several projects:<ul><li>gcc as a web application</li>
+                    <li>Content Sharing System</li>
+                    <li>Open Source Contributions</li></ul></p>
+          <p><a class="btn btn-primary" href="{% url 'career' %}" role="button"><font><font>View details »</font></font></a></p>
+        </div>
+      </div>
+                </div>
+            </section> <!-- #works -->
+
                             
             <!--
             ==================================================
@@ -435,8 +252,7 @@
                         <div class="col-md-12">
                             <div class="block">
                                 <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+                                <a href="{% url 'contact' %}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
                             </div>
                         </div>
                         
@@ -450,28 +266,24 @@
             <footer id="footer">
                 <div class="container">
                     <div class="col-md-8">
-                        <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
+                        <p> Powered By <bold>Djnago</bold></p>
                     </div>
                     <div class="col-md-4">
                         <!-- Social Media -->
                         <ul class="social">
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Facebook">
+                                <a href="https://www.facebook.com/akash.dwivedi.98" class="Facebook">
                                     <i class="ion-social-facebook"></i>
                                 </a>
                             </li>
+
                             <li>
-                                <a href="http://wwww.twitter.com/themefisher" class="Twitter">
-                                    <i class="ion-social-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="Linkedin">
+                                <a href="https://in.linkedin.com/in/akash-dwivedi-270150a9" class="Linkedin">
                                     <i class="ion-social-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://wwww.fb.com/themefisher" class="Google Plus">
+                                <a href="https://plus.google.com/u/0/101618258205520296777" class="Google Plus">
                                     <i class="ion-social-googleplus"></i>
                                 </a>
                             </li>

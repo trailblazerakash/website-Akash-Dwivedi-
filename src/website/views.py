@@ -5,7 +5,7 @@ def home(request):
     return render(request ,'home.html')
 def about(request):
     return render(request ,'about.html')
-def service(request):
+def career(request):
     return render(request ,'service.html')
 def gallery(request):
     return render(request ,'gallery.html')
