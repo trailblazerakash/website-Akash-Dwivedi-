@@ -1,0 +1,11 @@
+<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                    </div>
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_HOST_USER='akash.teehnoge@gmail.com'
+EMAIL_HOST_PASSWORD = 'prerna123'
+EMAIL_PORT= 587
+EMAIL_USE_TSL = True
+EMAIL_USE_SSL =False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL  = 'akashdwivedi.me'
