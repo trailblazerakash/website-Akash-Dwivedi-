@@ -10,12 +10,12 @@ urlpatterns = patterns('',
      url(r'^$', 'website.views.home', name='home'),
      url(r'^home/', 'website.views.home', name='home'),
      url(r'^about/', 'website.views.about', name='about'),
-     url(r'^career/', 'career.views.career', name='career'),
+     url(r'^career/', include('career.urls')),
      url(r'^gallery/', 'website.views.gallery', name='gallery'),
      url(r'^contact/', 'contact.views.contact', name='contact'),
      url(r'^Page_Not_Found/', 'website.views.Page_Not_Found', name='Page_Not_Found'),
      url(r'^admin/', include(admin.site.urls)),
-)
+     )
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -171,107 +171,37 @@ I have tried to explored a lot of opportunities in KIET - Academic Research Work
         ================================================== -->
         <section class="works career-page">
             <div class="container">
-                <h2 class="subtitle wow fadeInUp animated" data-wow-delay=".3s" data-wow-duration="500ms">Some Of Our Features Works</h2>
-                    <p class="subtitle-des wow fadeInUp animated" data-wow-delay=".5s" data-wow-duration="500ms">
-                        Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-                    </p>
+                <h2 class="section-heading subtitle wow fadeInUp animated animated" data-wow-delay=".3s" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.3s; animation-name: fadeInUp;">Projects </h2>
                 <div class="row">
-                    <div class="col-sm-3">
+                    {% if projects %}
+                    {% for project in projects %}
+                    <div class="col-sm-4">
                          <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
                             <div class="img-wrapper">
-                                <img src="{% static 'images/portfolio/item-1.jpg' %}" class="img-responsive" alt="this is a title" >
+                                <img src="{{ project.image1.url }}" class="img-responsive" alt="this is a title" >
                                 <div class="overlay">
                                     <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-1.jpg' %}">Demo</a>
-                                        <a target="_blank" href="">Details</a>
+                                        <a target="_blank" href="{{ project.slug }}">Details</a>
                                     </div>
                                 </div>
                             </div>
                             <figcaption>
                                 <h4>
-                                    <a href="#">
-                                        Dew Drop        
+                                    <a href="{{ project.slug }}">
+                                        {{ project.title }}
+
                                     </a>
                                 </h4>
                                 <p>
-                                    Redesigne UI Concept
+                                    {{ project.implementation }}
                                 </p>
                             </figcaption>
                         </figure>
                     </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="img-wrapper">
-                                <img src="{% static 'images/portfolio/item-2.jpg' %}" class="img-responsive" alt="this is a title" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-2.jpg' %}">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Bottle Mockup        
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <div class="img-wrapper">
-                                <img src="{% static 'images/portfolio/item-3.jpg' %}" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-3.jpg' %}">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Table Design        
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <div class="img-wrapper">
-                                <img src="{% static 'images/portfolio/item-4.jpg' %}" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="{% static 'images/portfolio/item-4.jpg' %}">Demo</a>
-                                        <a target="_blank" href="">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                                <h4>
-                                    <a href="#">
-                                        Make Up elements        
-                                    </a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
+                    {% endfor %}
+                    {% else %}
+                    <strong>There Is no Projects</strong>
+                    {% endif %}
                    
 
                 </div>
@@ -281,48 +211,7 @@ I have tried to explored a lot of opportunities in KIET - Academic Research Work
         ================================================== 
             Clients Section Start
         ================================================== -->
-        <section id="clients">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="subtitle text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".3s">Our Happy Clinets</h2>
-                        <p class="subtitle-des text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.</p>
-                        <div id="clients-logo" class="owl-carousel">
-                            <div>
-                                <img src="{% static 'images/clients/logo-1.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-2.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-3.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-4.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-5.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-1.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-2.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-3.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-4.jpg' %}" alt="">
-                            </div>
-                            <div>
-                                <img src="{% static 'images/clients/logo-5.jpg' %}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
 
 
@@ -337,12 +226,11 @@ I have tried to explored a lot of opportunities in KIET - Academic Research Work
                 <div class="row">
                     <div class="col-md-12">
                         <div class="block">
-                            <h2 class="title wow fadeInDown" data-wow-delay=".3s"   data-wow-duration="500ms">SO WHAT YOU THINK ?</h1>
-                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
-                        </div>
+                            <h2 class="title wow fadeInDown" data-wow-delay=".3s"   data-wow-duration="500ms">Working on some cool stuff</h1>
+
+                            </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
